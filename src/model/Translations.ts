@@ -24,7 +24,7 @@ export class Translations{
 	}
 
 	static getLang() : Promise<string>{
-		return Storage.getItem('user-lang', Translations.getBrowserLang());
+		return Storage.getItem('user-lang', 'zh');
 	}
 
 	static setBrowserLang(lang : string){
